@@ -20,6 +20,20 @@ To identify the core variables that influence vehicle MSRP (pricing) using a dat
 * **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
 * **Tool:** Google Colab / GitHub
 
-### 📊 Key Visualizations
-[Correlation Heatmap]
-Heatmap showing the 0.66 correlation between Engine HP and Price.*
+### 📊 Project Visualizations
+
+### 1. Price Outliers (MSRP)
+![Outliers](outliers.png)
+*Detected extreme luxury price outliers to ensure a representative analysis of the mass market.*
+
+### 2. Feature Correlation Heatmap
+![Correlation](corr.png)
+*Identified a 0.66 correlation between Horsepower and MSRP, confirming performance as a primary price driver.*
+
+### 3. Engine HP vs. Price Relationship
+![Scatter](scatter.png)
+*Visualizing the positive linear relationship between engine performance and vehicle cost.*
+
+### 4. Top 10 Manufacturers by Volume
+![Bar](bar.png)
+*Distribution of the most frequent brands within the dataset, led by Chevrolet and Ford.*
