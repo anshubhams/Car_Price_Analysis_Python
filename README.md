@@ -1,14 +1,25 @@
-# Car_Price_Analysis_Python
-This project performs a comprehensive Exploratory Data Analysis on a dataset of over 11,000 car models to identify the key factors that drive vehicle pricing (MSRP). Using Python, I cleaned the data and visualized relationships between engine specifications and market value.
+# Automotive Market Analysis: Exploratory Data Analysis (EDA)
 
-Key Insights (Data-Driven)
+### 📈 Project Objective
+To identify the core variables that influence vehicle MSRP (pricing) using a dataset of 11,000+ records. This analysis provides data-driven insights for pricing strategy and market positioning.
 
-1. Engine Power vs. Price: Found a 0.66 correlation between Engine HP and MSRP. This indicates that roughly 66% of a car's price movement can be explained by its horsepower.
+### 💡 Key Insights (The "Numbers")
+* **Price Driver:** Confirmed a **0.66 positive correlation** between Engine HP and MSRP.
+* **Fuel Efficiency:** Identified a **-0.73 negative correlation** between Engine Cylinders and Highway MPG.
+* **Data Quality:** Cleaned the dataset by removing **989 duplicates** and handling missing values, resulting in a final pool of **10,827 verified entries**.
+* **Market Representative:** Top 2 brands identified as **Chevrolet (1,123)** and **Ford (881)**.
 
-2. Dataset Volume: Successfully processed and cleaned 11,914 total entries. After removing duplicates and null values, the final analysis was performed on 10,827 high-quality rows.
+### 🛠️ Technical Workflow
+1. **Data Wrangling:** Dropped irrelevant features (`market_category`, `engine_fuel_type`) to simplify the data model.
+2. **Exploratory Visualization:** Utilized **Seaborn Boxplots** to identify luxury price outliers (Supercars) that skew the average.
+3. **Statistical Modeling:** Created a **Correlation Matrix** to visualize multi-variable relationships.
+4. **Aggregation:** Grouped data by Transmission and Brand to analyze mean price distributions.
 
-3. Market Dominance: Identified that Chevrolet (1,123 cars) and Ford (881 cars) are the most frequent brands, meaning the data is highly representative of the American mass-market.
+### 🐍 Tech Stack
+* **Language:** Python 3.x
+* **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
+* **Tool:** Google Colab / GitHub
 
-4. Fuel Efficiency Trade-off: There is a -0.73 negative correlation between Engine Cylinders and Highway MPG. This statistically proves that for every increase in engine size, fuel efficiency drops significantly.
-
-5. Average Pricing: The median car price (MSRP) in this dataset is $29,995, while the average (mean) is much higher at $40,594 due to extreme luxury outliers.
+### 📊 Key Visualizations
+[Correlation Heatmap]
+Heatmap showing the 0.66 correlation between Engine HP and Price.*
